@@ -44,6 +44,17 @@ describe('api server', () => {
       });
 
   });
+  it('should respond properly on request to /api/v1/users', () => {
+
+    return mockRequest
+      .get('/api/v1/users')
+      .then(results => {
+        expect(results.status).toBe(200);
+      })
+      .catch(err => {
+        expect(err).not.toBeDefined();
+      });
+  });
 
   it('should be able to post to /api/v1/notes', () => {
 
