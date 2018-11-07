@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint \"**/*.js\"",
     "start": "node index.js",
     "watch": "nodemon index.js",
     "test-watch": "jest --watchAll",
@@ -19,7 +20,9 @@
     "cors": "^2.8.4",
     "debug": "^3.1.0",
     "dotenv": "^5.0.1",
+    "eslint": "^5.7.0",
     "express": "^4.16.3",
+    "ipaddr": "0.0.9",
     "jest": "^23.6.0",
     "morgan": "^1.9.0",
     "require-dir": "^1.0.0",

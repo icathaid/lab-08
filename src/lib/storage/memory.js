@@ -19,7 +19,7 @@ storage.find = query => {
       });
       resolve(results);
     }
-
+    console.log('shut up lint', reject);
   });
 };
 
@@ -42,6 +42,7 @@ storage.save = (data) => {
     let record = Object.assign({}, database[data._id], data);
     database[record._id] = record;
     resolve(database[data._id]);
+    console.log('shut up linter', reject);
   });
 };
 

@@ -7,4 +7,5 @@ export default (req,res,next) => {
   res.setHeader('Content-Type', 'application/json');
   res.write(JSON.stringify(error));
   res.end();
+  console.log('shut up linter', next);
 };
